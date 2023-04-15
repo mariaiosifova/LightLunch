@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mam:tastdb
+
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db.changelog/db.changelog-master.xml
